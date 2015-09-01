@@ -15,11 +15,11 @@ I will use this space to document, lessons I have learned and what i need to wat
 
 
     * `./mysq -u root`
-    * `CREATE USER 'user'@'localhost';`
+    * `CREATE USER 'user'@'localhost' identified by 'password';`
     * `GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';`
     * `use hello;'
     * ' create table world (id INT, name VARCHAR(20));`
     * `insert into world (id,name) VALUES (2, "James");`
+    select User,Host from mysql.user;
     
-    
-    
+    SHOW VARIABLES LIKE 'wait_timeout';
